@@ -7,6 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+    objectToEdit = {kissa: "siru", "koira": "hunni"};
+
+    onChange = (thing)=>{
+        this.objectToEdit = thing;
+    }
+
   constructor(public navCtrl: NavController) {
 
   }
